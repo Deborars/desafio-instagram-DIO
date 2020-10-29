@@ -1,0 +1,166 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+}
+
+body{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:#fff;
+}
+
+.instagram-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 60%;
+  height: 100vh;
+}
+
+.instagram-phone{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.instagram-continue{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  width: 50%;
+  min-height: 34rem;
+}
+
+.group{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color:  rgb(243,243,243);
+  width: 100%;
+  padding: 1.3rem 0;
+  border: 1px solid lightgrey;
+}
+
+.group:nth-child(1){
+  min-height: 19rem;
+}
+
+.instagram-logo{
+  height: 3rem;
+}
+
+.profile-photo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 48%;
+  overflow: hidden;
+  
+}
+
+.profile-photo img{
+  height: 6rem;
+}
+
+.instagram-login{
+  background-color: #0095f6;
+  color: #fff;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.instagram-logout{
+  color: #0095f6;
+  margin-top: 1rem;
+}
+
+.not-account{
+  color: rgb(160,160,160);
+}
+
+.link-blue{
+  color: #0095f6;
+  font-weight: 400;
+}
+
+.get-the-app{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.3rem 0;
+}
+
+.get-the-app{
+  font-weight: bold;
+}
+
+.store-buttons{
+  display: flex;
+  padding: 1rem;
+}
+
+.store-btn{
+  margin-left: 10px;
+  height: 3rem;
+  width: 10rem;
+  background-size: cover;
+}
+
+.store-btn:nth-child(1){
+  background-image: url("./img/app-store-button.png");
+}
+
+.store-btn:nth-child(2){
+  background-image: url("./img/google-play-button.png");
+}
+
+/*
+===============
+media queries
+===============
+*/
+@media screen and (max-width:1024px){
+  .instagram-wrapper{
+  width: 90%;
+  }
+}
+
+@media screen and (max-width:650px){
+  .instagram-wrapper{
+    width: 90%;
+  }
+
+  .instagram-phone{
+    display: none;
+  }
+
+  .instagram-continue{
+    width: 100%;
+  }
+
+  .group{
+    background-color: #fff;
+    border: none;
+  }
+
+}
+
+@media screen and (max-width:295px){
+  .store-buttons{
+    flex-direction: column;
+  }
+  .store-btn:nth-child(1){
+    margin-bottom: 10px;
+  }
+}
